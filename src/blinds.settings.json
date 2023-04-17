@@ -1,0 +1,7 @@
+{
+    "style": "./blinds.style.json",
+    "icons": "./icons.json",
+    "cookieName": "blinds_cookie",
+    "domStyleId": "blinds_id",
+    "domIconsId": "blinds_dark_mode_id"
+}

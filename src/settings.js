@@ -41,10 +41,10 @@ export var blindsCookieName = 'blinds_cookie';
  * Holds the id string for the style tag
  * @param {Object} cookie 
  */
-export var blindsDomStyleId = 'blinds_id';
+export var blindsDomStyleId = 'blinds_style_id';
 
 /**
  * Holds the id string for the clickable icons
  * @param {Object} cookie 
  */
-export var blindsDomIconsId = 'blinds_dark_mode_id';
+export var blindsDomIconsId = 'blinds_id';

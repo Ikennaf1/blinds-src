@@ -28,7 +28,7 @@ export function showIcon()
 export function switchIcon()
 {
     let node = document.querySelector(`#${blindsDomIconsId}`);
-    if (checkCookie()) {
+    if (checkStorage()) {
         node.innerHTML = blindsIcons.normal;
     } else {
         node.innerHTML = blindsIcons.dark;

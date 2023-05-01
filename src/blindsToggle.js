@@ -3,7 +3,7 @@
  */
 export function blindsToggle()
 {
-    if (checkCookie()) {
+    if (checkStorage()) {
         deactivateDarkMode();
     } else {
         activateDarkMode();

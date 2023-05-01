@@ -3,15 +3,15 @@
  */
 export function blindsInit()
 {
-    if (isDarkMode() && !checkCookie("blindsInitialized")) {
+    if (isDarkMode() && !checkStorage("blindsInitialized")) {
         activateDarkMode();
     }
     
-    if (!checkCookie("blindsInitialized")) {
-        setCookie("blindsInitialized", "yes");
+    if (!checkStorage("blindsInitialized")) {
+        setStorage("blindsInitialized", "yes");
     }
 
-    if (checkCookie()) {
+    if (checkStorage()) {
         activateDarkMode();
     } else {
         deactivateDarkMode();

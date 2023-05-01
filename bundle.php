@@ -9,6 +9,7 @@ $scripts = [
     './src/activateDarkMode.js',
     './src/blindsToggle.js',
     './src/cookie.js',
+    './src/storage.js',
     './src/deactivateDarkMode.js',
     './src/isDarkMode.js',
     './src/blindsInit.js'

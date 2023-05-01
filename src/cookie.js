@@ -5,7 +5,7 @@
  * @param {number} exdays Number of days before expiration
  * @returns `void`
  */
-export function setCookie(cname = blindsCookieName, cvalue = "active", exdays = 30) {
+export function setCookie(cname, cvalue = "active", exdays = 30) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
@@ -17,7 +17,7 @@ export function setCookie(cname = blindsCookieName, cvalue = "active", exdays = 
  * @param {string} cname Name of the cookie
  * @returns `string` value of cookie parameter
  */
-export function getCookie(cname = blindsCookieName) {
+export function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -38,7 +38,7 @@ export function getCookie(cname = blindsCookieName) {
  * @param {string} cname Name of the cookie
  * @returns `boolean`
  */
-export function checkCookie(cname = blindsCookieName) {
+export function checkCookie(cname) {
     cname = getCookie(cname);
     if (cname != "") {
         return true;
@@ -51,7 +51,7 @@ export function checkCookie(cname = blindsCookieName) {
  * @param {string} cname Name of cookie
  * @returns `void`
  */
-export function deleteCookie(cname = blindsCookieName) {
+export function deleteCookie(cname) {
     if (checkCookie(cname)) {
         document.cookie = `${cname}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;SameSite=Strict`;
     }

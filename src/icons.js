@@ -27,7 +27,7 @@ export function showIcon()
  */
 export function switchIcon()
 {
-    let node = document.querySelector(`#${blindsDomIconsId}`);
+    let node = document.querySelector(`#${blindsIconsId}`);
     if (checkStorage()) {
         node.innerHTML = blindsIcons.normal;
     } else {

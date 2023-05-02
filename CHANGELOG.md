@@ -1,8 +1,15 @@
 # Change Log
 
+## [v0.4.1] - 2023-05-02
+### Added
+- Users can now set the `id` for the generated style tag, and the `id` for the toggle icons.
+- Users can now set the name or key for the generated cookie, or for the local storage.
+- Users can now choose between cookie based storage, or local based storage (local storage is still default).
+
 ## [v0.4.0] - 2023-05-02
 ### Added
 - Ability to store with local storage, in addition to cookie based storage.
+- Local storage is now default storage option.
 
 ## [v0.3.2] - 2023-05-01
 ### Changed

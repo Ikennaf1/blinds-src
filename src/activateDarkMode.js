@@ -10,7 +10,7 @@ export function activateDarkMode()
     let styles = constructDarkModeStyle();
 
     let styleTag = document.createElement("style");
-    styleTag.setAttribute("id", blindsDomStyleId);
+    styleTag.setAttribute("id", blindsStyleId);
     styleTag.textContent = styles;
 
     document.head.appendChild(styleTag);

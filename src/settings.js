@@ -75,7 +75,6 @@ export function setBlindsStyleId(styleId)
 
 /**
  * Holds the `id` string for the clickable icons
- * @param {Object} cookie 
  */
 export var blindsIconsId = 'blinds_id';
 
@@ -86,4 +85,18 @@ export var blindsIconsId = 'blinds_id';
 export function setBlindsIconsId(iconsId)
 {
     blindsIconsId = iconsId;
+}
+
+/**
+ * Holds `true` if user wants to show icons, otherwise `false`
+ */
+export var blindsShowIcons = true;
+
+/**
+ * Sets the boolean value for the blindsShowIcons variable
+ * @param {string} storageType
+ */
+export function setBlindsShowIcons(value)
+{
+    blindsShowIcons = value;
 }

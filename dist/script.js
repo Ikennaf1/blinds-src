@@ -38,6 +38,7 @@ blinds.setBlindsIcons({
 // blinds.setBlindsStorageKey('mykey');
 // blinds.setBlindsStyleId('head_style_id');
 // blinds.setBlindsIconsId('body_icon_id');
+// blinds.setBlindsShowIcons(false);
 
 blinds.blindsInit();
 

@@ -27,10 +27,12 @@ export function showIcon()
  */
 export function switchIcon()
 {
-    let node = document.querySelector(`#${blindsIconsId}`);
-    if (checkStorage()) {
-        node.innerHTML = blindsIcons.normal;
-    } else {
-        node.innerHTML = blindsIcons.dark;
+    if (blindsShowIcons === true) {
+        let node = document.querySelector(`#${blindsIconsId}`);
+        if (checkStorage()) {
+            node.innerHTML = blindsIcons.normal;
+        } else {
+            node.innerHTML = blindsIcons.dark;
+        }
     }
 }

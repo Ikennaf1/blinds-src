@@ -1,4 +1,18 @@
 /**
+ * Holds the dark mode final style
+ */
+export var blindsStylesFinal;
+
+/**
+ * Defines the dark mode final style
+ * @param {string} style
+ */
+export function setBlindsStylesFinal(style)
+{
+    blindsStylesFinal = style;
+}
+
+/**
  * Holds the dark mode style
  */
 export var blindsStyles;

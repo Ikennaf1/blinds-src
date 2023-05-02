@@ -7,11 +7,13 @@
  */
 export function activateDarkMode()
 {
-    let styles = constructDarkModeStyle();
+    if (blindsStylesFinal == undefined) {
+        setBlindsStylesFinal(constructDarkModeStyle());
+    }
 
     let styleTag = document.createElement("style");
     styleTag.setAttribute("id", blindsStyleId);
-    styleTag.textContent = styles;
+    styleTag.textContent = blindsStylesFinal;
 
     document.head.appendChild(styleTag);
     setStorage();

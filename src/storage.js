@@ -1,13 +1,14 @@
 /**
  * Saves info to cookie or local storage, based on admin preference
  */
-function setStorage(name = blindsStorageKey, value = "active")
+export function setStorage(name = blindsStorageKey, value = "active")
 {
     switch (blindsStorageType) {
         case "cookie":
             setCookie(name, value);
             break;
         case "localstorage":
+            setLocalStorage(name, value);
             break;
         default:
             break;
@@ -17,13 +18,13 @@ function setStorage(name = blindsStorageKey, value = "active")
 /**
  * Retrieves info from cookie or local storage, based on admin preference
  */
-function getStorage(name = blindsStorageKey)
+export function getStorage(name = blindsStorageKey)
 {
     switch (blindsStorageType) {
         case "cookie":
             return getCookie(name);
         case "localstorage":
-            return;
+            return getLocalStorage(name);
         default:
             return;
     }
@@ -32,13 +33,13 @@ function getStorage(name = blindsStorageKey)
 /**
  * Checks for info in cookie or local storage, based on admin preference
  */
-function checkStorage(name = blindsStorageKey)
+export function checkStorage(name = blindsStorageKey)
 {
     switch (blindsStorageType) {
         case "cookie":
             return checkCookie(name);
         case "localstorage":
-            return;
+            return checkLocalStorage(name);
         default:
             return;
     }
@@ -47,13 +48,14 @@ function checkStorage(name = blindsStorageKey)
 /**
  * Deletes info from cookie or local storage, based on admin preference
  */
-function deleteStorage(name = blindsStorageKey)
+export function deleteStorage(name = blindsStorageKey)
 {
     switch (blindsStorageType) {
         case "cookie":
             deleteCookie(name);
             break;
         case "localstorage":
+            deleteLocalStorage(name);
             break;
         default:
             break;

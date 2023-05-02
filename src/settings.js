@@ -34,10 +34,10 @@ export function setBlindsIcons(icons)
 /**
  * Holds the name of the storage type
  */
-export var blindsStorageType = 'cookie';
+export var blindsStorageType = 'localstorage';
 
 /**
- * Defines the string to name our main cookie
+ * Defines the name for the main cookie or local storage
  * @param {Object} cookie 
  */
 export var blindsStorageKey = 'blinds_cookie';

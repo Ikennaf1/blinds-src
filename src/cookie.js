@@ -5,7 +5,7 @@
  * @param {number} exdays Number of days before expiration
  * @returns `void`
  */
-export function setCookie(cname, cvalue = "active", exdays = 30) {
+export function setCookie(cname, cvalue, exdays = 30) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
@@ -30,7 +30,7 @@ export function getCookie(cname) {
         return c.substring(name.length, c.length);
         }
     }
-    return "";
+    return null;
 }
 
 /**
@@ -40,7 +40,7 @@ export function getCookie(cname) {
  */
 export function checkCookie(cname) {
     cname = getCookie(cname);
-    if (cname != "") {
+    if (cname !== null) {
         return true;
     }
     return false;

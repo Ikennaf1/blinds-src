@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.4.0] - 2023-05-02
+### Added
+- Ability to store with local storage, in addition to cookie based storage.
+
 ## [v0.3.2] - 2023-05-01
 ### Changed
 - Abstracted away the storage functions so more storage types can be possible.

@@ -1,5 +1,5 @@
 /**
- * First function that runs on load
+ * Main function which calls the other functions, like an entry point
  */
 export function blindsInit()
 {

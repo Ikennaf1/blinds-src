@@ -39,6 +39,9 @@ blinds.setBlindsIcons({
 // blinds.setBlindsStyleId('head_style_id');
 // blinds.setBlindsIconsId('body_icon_id');
 // blinds.setBlindsShowIcons(false);
+// const alat = () => { alert("Toggled") };
+// const alats = () => { alert("Toggledsss") };
+// blinds.setOnToggle(alat, alats);
 
 blinds.blindsInit();
 

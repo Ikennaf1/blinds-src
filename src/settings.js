@@ -114,3 +114,16 @@ export function setBlindsShowIcons(value)
 {
     blindsShowIcons = value;
 }
+
+/**
+ * Holds the name of functions to run on toggle
+ */
+export var toggleFuncs = [];
+
+/**
+ * Sets the names of functions to run om toggle
+ */
+export function setOnToggle(...func)
+{
+    toggleFuncs = func;
+}

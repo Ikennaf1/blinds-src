@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.5.0] - 2023-05-02
+### Added
+- New hooks: `setOnToggle`
+
 ## [v0.4.1] - 2023-05-02
 ### Added
 - Users can now set the `id` for the generated style tag, and the `id` for the toggle icons.

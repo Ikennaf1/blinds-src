@@ -15,7 +15,13 @@ export function setBlindsStylesFinal(style)
 /**
  * Holds the dark mode style
  */
-export var blindsStyles;
+export var blindsStyles = {
+    "*": {
+        "color": "hsl(228, 5%, 70%)",
+        "background-color": "hsl(228, 20%, 10%)",
+        "border-color": "hsl(228, 20%, 30%)"
+    }
+};
 
 /**
  * Defines the dark mode style

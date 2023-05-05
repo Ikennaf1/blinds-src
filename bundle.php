@@ -23,6 +23,10 @@ foreach ($scripts as $script) {
 
 file_put_contents($dest, $bundles);
 
-// exec("uglifyjs dist/blinds.js -o dist/blinds.min.js");
+exec("uglifyjs dist/blinds.js -o dist/blinds.min.js");
+
+copy("dist/blinds.min.js", "./blinds/blinds.min.js");
+copy("dist/index.html", "./blinds/index.html");
+copy("dist/script.js", "./blinds/script.js");
 
 // unlink("dist/blinds.js");

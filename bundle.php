@@ -29,4 +29,4 @@ copy("dist/blinds.min.js", "./blinds/blinds.min.js");
 copy("dist/index.html", "./blinds/index.html");
 copy("dist/script.js", "./blinds/script.js");
 
-// unlink("dist/blinds.js");
+unlink("dist/blinds.js");

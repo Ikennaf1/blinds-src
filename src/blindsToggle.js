@@ -9,6 +9,16 @@ export function onToggle()
 }
 
 /**
+ * This function runs whenever the icon is toggled to dark mode
+ */
+export function onToggleDark()
+{
+    toggleDarkFuncs.map((func) => {
+        func();
+    });
+}
+
+/**
  * Toggles the icons
  */
 export function blindsToggle()
@@ -17,6 +27,7 @@ export function blindsToggle()
         deactivateDarkMode();
     } else {
         activateDarkMode();
+        onToggleDark();
     }
     onToggle();
 }

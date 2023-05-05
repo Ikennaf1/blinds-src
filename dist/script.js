@@ -1,4 +1,4 @@
-import * as blinds from './blinds.js';
+import * as blinds from './blinds.min.js';
 
 blinds.setBlindsStyles({
     "*": {
@@ -42,6 +42,9 @@ blinds.setBlindsIcons({
 // const alat = () => { alert("Toggled") };
 // const alats = () => { alert("Toggledsss") };
 // blinds.setOnToggle(alat, alats);
+// const alatDark = () => { alert("ToggledDark") };
+// const alatDarks = () => { alert("ToggledDarksssssssssssssss") };
+// blinds.setOnToggleDark(alatDark, alatDarks);
 
 blinds.blindsInit();
 

@@ -133,3 +133,16 @@ export function setOnToggle(...func)
 {
     toggleFuncs = func;
 }
+
+/**
+ * Holds the name of functions to run on toggle
+ */
+export var toggleDarkFuncs = [];
+
+/**
+ * Sets the names of functions to run om toggle
+ */
+export function setOnToggleDark(...func)
+{
+    toggleDarkFuncs = func;
+}

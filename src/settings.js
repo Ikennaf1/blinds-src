@@ -127,9 +127,9 @@ export function setBlindsShowIcons(value)
 export var toggleFuncs = [];
 
 /**
- * Sets the names of functions to run om toggle
+ * Sets the names of functions to run on toggle
  */
-export function setOnToggle(...func)
+export function onToggle(...func)
 {
     toggleFuncs = func;
 }
@@ -142,7 +142,7 @@ export var toggleDarkFuncs = [];
 /**
  * Sets the names of functions to run on toggle to dark
  */
-export function setOnToggleDark(...func)
+export function onToggleDark(...func)
 {
     toggleDarkFuncs = func;
 }
@@ -155,7 +155,7 @@ export var toggleNormalFuncs = [];
 /**
  * Sets the names of functions to run on toggle to normal
  */
-export function setOnToggleNormal(...func)
+export function onToggleNormal(...func)
 {
     toggleNormalFuncs = func;
 }

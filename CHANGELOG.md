@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.6.0] - 2023-05-24
+### Changed
+- Hooks: `setOnToggle`, `setOnToggleDark`, `setOnToggleNormal` now `onToggle`, `onToggleDark`, `onToggleNormal`
+
 ## [v0.5.2] - 2023-05-02
 ### Added
 - New hook: `setOnToggleDark`, `setOnToggleNormal`

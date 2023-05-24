@@ -7,7 +7,7 @@
  */
 export function activateDarkMode()
 {
-    if (blindsStylesFinal == undefined) {
+    if (blindsStylesFinal === undefined) {
         setBlindsStylesFinal(constructDarkModeStyle());
     }
 

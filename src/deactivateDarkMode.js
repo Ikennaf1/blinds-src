@@ -7,9 +7,9 @@
  */
 export function deactivateDarkMode()
 {
-    let style = "";
+    let style = document.querySelector(`style#${blindsStyleId}`);
 
-    if (style = document.querySelector(`style#${blindsStyleId}`)) {
+    if (style != null) {
         document.head.removeChild(style);
         deleteStorage();
         switchIcon();

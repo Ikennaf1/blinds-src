@@ -1,7 +1,7 @@
 /**
  * This function runs whenever the toggle icon is clicked
  */
-export function onToggle()
+export function setOnToggle()
 {
     toggleFuncs.map((func) => {
         func();
@@ -11,7 +11,7 @@ export function onToggle()
 /**
  * This function runs whenever the icon is toggled to dark mode
  */
-export function onToggleDark()
+export function setOnToggleDark()
 {
     toggleDarkFuncs.map((func) => {
         func();
@@ -21,7 +21,7 @@ export function onToggleDark()
 /**
  * This function runs whenever the icon is toggled to normal mode
  */
-export function onToggleNormal()
+export function setOnToggleNormal()
 {
     toggleNormalFuncs.map((func) => {
         func();
@@ -35,10 +35,10 @@ export function blindsToggle()
 {
     if (checkStorage()) {
         deactivateDarkMode();
-        onToggleNormal();
+        setOnToggleNormal();
     } else {
         activateDarkMode();
-        onToggleDark();
+        setOnToggleDark();
     }
-    onToggle();
+    setOnToggle();
 }

@@ -28,5 +28,6 @@ exec("uglifyjs dist/blinds.js -o dist/blinds.min.js");
 copy("dist/blinds.min.js", "./blinds/blinds.min.js");
 copy("dist/index.html", "./blinds/index.html");
 copy("dist/script.js", "./blinds/script.js");
+copy("./CHANGELOG.md", "./blinds/CHANGELOG.md");
 
 unlink("dist/blinds.js");

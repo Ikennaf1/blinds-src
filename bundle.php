@@ -29,5 +29,11 @@ copy("dist/blinds.min.js", "./blinds/blinds.min.js");
 copy("dist/index.html", "./blinds/index.html");
 copy("dist/script.js", "./blinds/script.js");
 copy("./CHANGELOG.md", "./blinds/CHANGELOG.md");
+copy("./AUTHORS", "./blinds/AUTHORS");
+
+copy("dist/blinds.min.js", "./blinds/dist/blinds.min.js");
+$cdn = file_get_contents("./blinds/dist/blinds.min.js");
+$cdn = str_replace("export ", "", $cdn);
+file_put_contents("./blinds/dist/blinds.min.js", $cdn);
 
 unlink("dist/blinds.js");

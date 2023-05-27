@@ -1,9 +1,7 @@
 # Blinds
 
-## Important Notice
-```
-This repositiory contains source code for the original Blinds javascript project. You are not expected to make use of this repository in either your development or production codes. If you are looking to contribute in any way to this free project, you are very welcome. But if instead, you are looking for the blinds repo to use in your project, then head over to [this repository](https://github.com/Ikennaf1/blinds), and follow the installation guide.
-```
+>## Important Notice
+> This repositiory contains source code for the original Blinds javascript project. You are not expected to make use of this repository in either your development or production codes. If you are looking to contribute in any way to this free project, you are very welcome. But if instead, you are looking for the blinds repo to use in your project, then head over to [this repository](https://github.com/Ikennaf1/blinds), and follow the installation guide.
 
 ## About Blinds
 

@@ -11,8 +11,13 @@ export function activateDarkMode()
         setBlindsStylesFinal(constructDarkModeStyle());
     }
 
-    let styleTag = document.createElement("style");
-    styleTag.setAttribute("id", blindsStyleId);
+    let styleTag;
+    if (document.querySelector(`style#${blindsStyleId}`) === null) {
+        styleTag = document.createElement("style");
+        styleTag.setAttribute("id", blindsStyleId);
+    } else {
+        styleTag = document.querySelector(`style#${blindsStyleId}`);
+    }
     styleTag.textContent = blindsStylesFinal;
 
     document.head.appendChild(styleTag);

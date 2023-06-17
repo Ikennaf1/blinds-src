@@ -15,4 +15,4 @@ Blinds is accessible, intuitive, and provides easy way to make a dark mode versi
 
 ## License
 
-Blinds is open-sourced software licensed under the [GNU General Public License version 3](https://opensource.org/license/gpl-3-0/).
+Blinds is open-sourced software licensed under the [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).

@@ -29,10 +29,12 @@ export function switchIcon()
 {
     if (blindsShowIcons === true) {
         let node = document.querySelector(`#${blindsIconsId}`);
+        // node.setAttribute("alt", "Dark mode powered by Blinds");
+        node.innerHTML = '<span style="display:none">Dark mode powered by Blinds</span>';
         if (checkStorage()) {
-            node.innerHTML = blindsIcons.normal;
+            node.innerHTML += getIconNormal();
         } else {
-            node.innerHTML = blindsIcons.dark;
+            node.innerHTML += getIconDark();
         }
     }
 }

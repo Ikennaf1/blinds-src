@@ -61,6 +61,14 @@ export function useDefaultIcons()
 }
 
 /**
+ * Returns the icons usedfor the project
+ */
+export function getIcons()
+{
+    return blindsIcons;
+}
+
+/**
  * Holds the name of the storage type
  */
 export var blindsStorageType = 'localstorage';
